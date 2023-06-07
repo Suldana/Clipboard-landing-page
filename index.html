@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Clipboard landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        body {
+            background-image: url(./images/bg-header-desktop.png);
+            background-color: white;
+            background-size: cover;
+            font-family: open sans, sans-serif;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .container {
+            margin-top: 100px;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        button {
+            padding: 13px 45px;
+            border: none;
+            border-radius: 30px;
+            color: rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 0.5px 5px 1px rgba(0, 0, 0, 0.3);
+        }
+        
+        .green:hover {
+            background-color: hsl(143, 56%, 54%);
+            color: rgb(255, 255, 255);
+        }
+        
+        .blue:hover {
+            background-color: hsl(233, 91%, 49%);
+            color: rgb(249, 249, 249);
+        }
+        
+        .container2 {
+            margin-top: 100px;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        p {
+            color: rgb(151, 148, 148);
+        }
+        
+        .container3 {
+            display: flex;
+            margin: 0 5rem;
+            gap: 3rem;
+            margin-top: 100px;
+        }
+        
+        .image1 img {
+            height: 490px;
+            width: 680px;
+        }
+        
+        .container4 {
+            margin-top: 100px;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        .container5 img {
+            display: flex;
+            margin-top: 100px;
+            margin-left: 400px;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 490px;
+            width: 750px;
+        }
+        
+        .container6 {
+            margin-top: 70px;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        .container7 {
+            display: flex;
+            background: white;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            justify-content: center;
+            margin: 0 5rem;
+            gap: 3rem;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .container8 {
+            display: flex;
+            background: white;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            justify-content: center;
+            margin: 0 5rem;
+            gap: 8rem;
+            margin-top: 100px;
+            text-align: center;
+        }
+        
+        .container9 {
+            margin-top: 100px;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        .blue {
+            padding: 13px 45px;
+            border: none;
+            border-radius: 30px;
+            color: rgb(252, 252, 252);
+            box-shadow: 2px 0.5px 5px 1px rgba(0, 0, 0, 0.3);
+            background-color: hsl(233, 91%, 49%);
+            margin-left: 0.75rem;
+        }
+        
+        .green {
+            padding: 13px 45px;
+            border: none;
+            border-radius: 30px;
+            color: rgb(255, 255, 255);
+            box-shadow: 2px 0.5px 5px 1px rgba(0, 0, 0, 0.3);
+            background-color: hsl(143, 56%, 54%);
+        }
+        /* .container10 {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            color: rgba(rgb(112, 50, 50), green, blue);
+        } */
+        
+        .footerimg {
+            height: 40px;
+            width: 40px;
+            margin-right: 5rem;
+        }
+        
+        footer {
+            background-color: hsl(210, 5%, 91%);
+            display: flex;
+            gap: 5rem;
+            margin-top: 5rem;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        
+        .socials {
+            align-self: flex-end;
+            margin-top: none;
+        }
+        
+        .links {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            margin-left: 17rem;
+        }
+        
+        .links a {
+            color: black;
+            margin-left: 20px;
+            height: 50px;
+            width: 50px;
+            text-decoration: none;
+            gap: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="first">
+            <h1>A history of everything you copy</h1>
+            <p>Clipboard allows you to track and organize everything you copy. Instantly <br> access your clipboard on all your devices.</p>
+        </div>
+        <button class="green">Download for iOS</button>
+        <button class="blue">Download for Mac</button>
+    </div>
+
+    <div class="container2">
+        <div class="second">
+            <h2>Keep track of your snippets</h2>
+            <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access <br> your snippets immediately on all your devices. Our Mac and iOS apps will help you <br> organize everything.</p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="image1">
+            <img src="./images/image-computer.png" alt="">
+        </div>
+        <div class="text2">
+            <h3>Quick Search</h3>
+            <p>Easily search your snippets by content, <br> category, web address, application, and more.</p>
+            <h3>iCloud Sync</h3>
+            <p>Instantly saves and syncs snippets across all <br> your devices.</p>
+            <h3>Complete History</h3>
+            <p>Retrieve any snippets from the first moment <br> you started using the app.</p>
+        </div>
+    </div>
+    <div class="container4">
+        <h2>Access Clipboard anywhere</h2>
+        <p>Whether you’re on the go, or at your computer, you can access all your Clipboard <br> snippets in a few simple clicks.</p>
+    </div>
+    <div class="container5">
+        <img src="./images/image-devices.png" alt="">
+    </div>
+    <div class="container6">
+        <h2>Supercharge your workflow</h2>
+        <p>We’ve got the tools to boost your productivity.</p>
+    </div>
+    <div class="container7">
+        <div class="icon1">
+            <img src="./images/icon-blacklist.svg" alt="">
+            <h3>Create blacklists</h3>
+            <p>Ensure sensitive information never makes its <br> way to your clipboard by excluding certain <br> sources.</p>
+        </div>
+        <div class="icon2">
+            <img src="./images/icon-text.svg" alt="">
+            <h3>Plain text snippets</h3>
+            <p>Remove unwanted formatting from copied text <br> for a consistent look.</p>
+        </div>
+        <div class="icon3">
+            <img src="./images/icon-preview.svg" alt="">
+            <h3>Sneak preview</h3>
+            <p>Quick preview of all snippets on your Clipboard <br> for easy access.</p>
+        </div>
+    </div>
+    <div class="container8">
+        <div class="icon4">
+            <img src="./images/logo-google.png" alt="">
+        </div>
+        <div class="icon5">
+            <img src="./images/logo-ibm.png" alt="">
+        </div>
+        <div class="icon6">
+            <img src="./images/logo-microsoft.png" alt="">
+        </div>
+        <div class="icon7">
+            <img src="./images/logo-hp.png" alt="">
+        </div>
+        <div class="icon8">
+            <img src="./images/logo-vector-graphics.png" alt="">
+        </div>
+    </div>
+    <div class="container9">
+        <div class="forth">
+            <h2>Clipboard for iOS and Mac OS</h2>
+            <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and <br> you’re ready to start adding to your clipboard.</p>
+        </div>
+        <button class="green">Download for iOS</button>
+        <button class="blue">Download for Mac</button>
+    </div>
+
+    <footer>
+
+        <div class="footer1">
+            <img class="footerimg" src="./images/logo.svg" alt="">
+        </div>
+        <div class="footer2">
+            <p>FAQs</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="footer3">
+            <p>Privacy Policy</p>
+            <p>Press Kit</p>
+        </div>
+        <div class="footer4">
+            <p>Install Guide</p>
+        </div>
+        <div class="socials">
+            <ul class="links">
+                <li>
+                    <a href=""><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
